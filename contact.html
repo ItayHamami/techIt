@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><i class="fa-regular fa-gem" style="color: #ffffff;"></i> TechIT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="products.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="checkOut.html">Check Out</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="form-holder">
+        <div class="form-body">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-4"> 
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>Contact us!</h3>
+                            <p>Fill in the data below.</p>
+                            <form class="requires-validation" novalidate>
+    
+                                <div class="form-group">
+                                    <input id="firstName" class="form-control" type="text" name="name" placeholder="First Name" required>
+                                    <div class="valid-feedback">Username field is valid!</div>
+                                    <div class="invalid-feedback">Username field cannot be blank!</div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <input id="lastName" class="form-control" type="text" name="name" placeholder="Second Name" required>
+                                    <div class="valid-feedback">Last name field is valid!</div>
+                                    <div class="invalid-feedback">Last name field cannot be blank!</div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <input id="email" class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                    <div class="valid-feedback">Email field is valid!</div>
+                                    <div class="invalid-feedback">Email field cannot be blank!</div>
+                                </div>
+    
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" id="textarea" rows="2" placeholder="Your text here:" required></textarea>
+                                    <div class="valid-feedback">Text field is valid!</div>
+                                    <div class="invalid-feedback">Text field cannot be blank!</div>
+                                </div>
+    
+                                <div class="form-button mt-3">
+                                    <button onclick="sendval(event)" class="btn btn-primary">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <footer>
+            <div class="author-text">
+                <p>Made by <b>Itay Hamami</b>
+                </p>
+            </div>   
+        </footer>
+    </div>
+
+    <script src="contact.js" ></script>
+</body>
+
+</html>
